@@ -21,7 +21,7 @@
 
    .. autosummary::
    {% for item in attributes %}
-      ~{{ name }}.{{ item }}
+      ~{{ fullname }}.{{ item }}
    {%- endfor %}
 
    {% endif %}
@@ -34,7 +34,7 @@
 
    .. autosummary::
    {% for item in methods %}
-      ~{{ name }}.{{ item }}
+      ~{{ fullname }}.{{ item }}
    {%- endfor %}
 
    {% endif %}
@@ -42,24 +42,3 @@
 
    {% block attributes_documentation %}
    {% if attributes %}
-
-   .. rubric:: Attributes Documentation
-
-   {% for item in attributes %}
-   .. autoattribute:: {{ item }}
-   {%- endfor %}
-
-   {% endif %}
-   {% endblock %}
-
-   {% block methods_documentation %}
-   {% if methods %}
-
-   .. rubric:: Methods Documentation
-
-   {% for item in methods %}
-   .. automethod:: {{ item }}
-   {%- endfor %}
-
-   {% endif %}
-   {% endblock %}
