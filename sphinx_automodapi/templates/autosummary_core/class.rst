@@ -20,6 +20,7 @@
    .. rubric:: Attributes Summary
 
    .. autosummary::
+      :toctree: .
    {% for item in attributes %}
       ~{{ fullname }}.{{ item }}
    {%- endfor %}
@@ -33,6 +34,7 @@
    .. rubric:: Methods Summary
 
    .. autosummary::
+      :toctree: .
    {% for item in methods %}
       ~{{ fullname }}.{{ item }}
    {%- endfor %}
