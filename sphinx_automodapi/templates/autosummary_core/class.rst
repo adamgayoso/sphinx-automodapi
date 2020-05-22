@@ -39,6 +39,3 @@
 
    {% endif %}
    {% endblock %}
-
-   {% block attributes_documentation %}
-   {% if attributes %}
