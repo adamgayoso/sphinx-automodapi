@@ -20,7 +20,8 @@
    .. rubric:: Attributes Summary
 
    .. autosummary::
-      :toctree: api/
+      :toctree: .
+         :maxdepth: 0
    {% for item in attributes %}
       ~{{ fullname }}.{{ item }}
    {%- endfor %}
@@ -34,7 +35,8 @@
    .. rubric:: Methods Summary
 
    .. autosummary::
-      :toctree: api/
+      :toctree: .
+         :maxdepth: 0
    {% for item in methods %}
       ~{{ fullname }}.{{ item }}
    {%- endfor %}
